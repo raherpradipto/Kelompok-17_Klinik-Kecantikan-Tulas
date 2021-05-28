@@ -81,3 +81,73 @@ def hairtreatment():
     else:
         print("Invalid code \nSilahkan Masukkan Sesuai Pilihan Yang Ada!")
         hairtreatment()
+        
+def bodytreatment():
+    print("Berikut adalah pilihan Body Treatment \nSilahkan pilih yang anda inginkan")
+    pilbodytreatment = input("1. Body Slimming \n2. Body Treatment \n3. Body Firming")
+    if pilbodytreatment == "1":
+        print("Silahkan pilih jenis berikut: ")
+        bodyslimming()
+    elif pilbodytreatment == "2":
+        print("Silahkan pilih jenis berikut: ")
+        treatmentbody()
+    elif pilbodytreatment == "3":
+        print("Silahkan pilih jenis berikut: ")
+        bodytreatment()
+    else:
+        print("Invalid code \nSilahkan Masukkan Sesuai Pilihan Yang Ada!")
+        bodytreatment()
+
+def bodyslimming():
+    print("Berikut adalah pilihan Body Slimming \nSilahkan pilih yang anda inginkan")
+    pilbodyslim = input("1. Meso Body Perut \n2. Meso Body Paha \n3. Meso Body Lengan \n\t:")
+    if pilbodyslim == "1":
+        inputcustjam()
+    elif pilbodyslim == "2":
+        inputcustjam()
+    elif pilbodyslim == "3":
+        inputcustjam()
+    else:
+        print("Invalid code \nSilahkan Masukkan Sesuai Pilihan Yang Ada!")
+        bodyslimming()
+
+def treatmentbody():
+    print("Berikut adalah pilihan Perawatan Tubuh \nSilahkan pilih yang anda inginkan")
+    pilbodytreat = input("1. Refreshing Body Spa \n2. Antioxidan Spa \n3. Brightening Spa \n\t:")
+    if pilbodytreat == "1":
+        inputcustjam()
+    elif pilbodytreat == "2":
+        inputcustjam()
+    elif pilbodytreat == "3":
+        inputcustjam()
+    else:
+        print("Invalid code \nSilahkan Masukkan Sesuai Pilihan Yang Ada!")
+        treatmentbody()
+
+def consultation():
+    print("Berikut Daftar Jam Konsultasi :")
+    jamkonsul = "1. 09.00 \n2. 11.00 \n3. 13.00"
+    print(jamkonsul)
+    injamkonsul = (input("Pilih Jam Konsultasi Yang Anda Inginkan :"))
+    print("Berikut Daftar Dokter :")
+    dokter = "1. Dr. Tazkiya Mutia Yogasani \n2. Dr. Sekar Salsabila Santosa \nDr. Rahmat Herpradipto"
+    print(dokter)
+    indokter = (input("Pilih Dokter Yang Anda Inginkan :"))
+    print("Berikut Daftar Media Konsultasi :")
+    media = "1. Whatsapp \n2. Zoom Meeting \n3. Google Meeting \n4. Datang Langsung"
+    print(media)
+    inmedia = (input("Pilih Media Yang Anda Inginkan :"))
+    tagihan()
+
+def buymedicine():
+    print("Berikut adalah beberapa medicine yang kami sediakan \nSilahkan pilih apa yang anda inginkan")
+    pilmedicine = input("1. Skincare \n2. Haircare \n\t:")
+    if pilmedicine == "1":
+        print("Silahkan pilih jenis berikut: ")
+        skincare()
+    elif pilmedicine == "2":
+        print("Silahkan pilih jenis berikut: ")
+        haircare()
+    else:
+        print("Invalid code \nSilahkan Input sesuai pilihan yang tersedia!")
+        buymedicine()
