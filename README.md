@@ -130,7 +130,7 @@ def consultation():
     print(jamkonsul)
     injamkonsul = (input("Pilih Jam Konsultasi Yang Anda Inginkan :"))
     print("Berikut Daftar Dokter :")
-    dokter = "1. Dr. Tazkiya Mutia Yogasani \n2. Dr. Sekar Salsabila Santosa \nDr. Rahmat Herpradipto"
+    dokter = "1. Dr. Tazkiya Mutia Yogasani \n2. Dr. Sekar Salsabila Santosa \n3. Dr. Rahmat Herpradipto"
     print(dokter)
     indokter = (input("Pilih Dokter Yang Anda Inginkan :"))
     print("Berikut Daftar Media Konsultasi :")
