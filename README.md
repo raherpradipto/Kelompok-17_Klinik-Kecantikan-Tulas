@@ -199,3 +199,57 @@ def inputcustjam():
 def tagihan():
     print("......")
     breakpoint()
+
+def mulai():
+    print("Selamat Datang di Aplikasi Klinik Tulas \nDapatkan Apa Yang Anda Inginkan",
+          "==="*12,"\nSilahkan pilih layanan yang tersedia \n1. Treatment \n2. Consultation \n3. Buy Medicine \n4. Cancel")
+    menu = input("Silahkan pilih jenis produk yang anda inginkan\t:")
+    if menu == "1":
+        treatment()
+    elif menu == "2":
+        consultation()
+    elif menu == "3":
+        buymedicine()
+    elif menu == "4":
+        cancel()
+    else:
+        print("Invalid code")
+    mulai()
+
+def SignUp():
+    username = input(str("Input Username Anda\t:"))
+    password = input(str("Input Password Anda\t:"))
+    cpassword = input(str("Masukkan ulang Password anda\t:"))
+    if password == cpassword:
+        pass
+    else:
+        print("Password anda tidak sesuai")
+    NoWhatsApp = int(input("Input Nomor WhatsApp Anda\t:"))
+    email = input(str("Input Alamat Email Anda\t:"))
+    noverif = input("Silahkan Input Nomor Verifikasi Yang Sudah Dikirimkan\t:")
+    print("Selamat Anda Telah Terdaftar Sebagai Member Klinik Tulas ")
+    member_number = print("Berikut Nomor Member Anda : ", NoWhatsApp)
+    mulai()
+
+def Login():
+    usernamelogin = input("Input Username Anda\t:")
+    passwordlogin = input("Input Password Anda\t:")
+    memberlogin = input("Input Nomor Member Anda\t:")
+    print("Login Success")
+    mulai()
+
+def start():
+    global registrasi
+    print("Selamat Datang di Program Registrasi Klinik Tulas")
+    print("===" * 12)
+    print("Silahkan Lakukan Registrasi Dibawah Ini:")
+    registrasi = input("Silahkan Pilih Langkah yang Akan Anda Lakukan \n1. Sign Up \n2. Login\t\n>")
+
+start()
+
+if registrasi == "1":
+    SignUp()
+elif registrasi == "2":
+    Login()
+else:
+    print("Invalid Kode")
