@@ -151,3 +151,51 @@ def buymedicine():
     else:
         print("Invalid code \nSilahkan Input sesuai pilihan yang tersedia!")
         buymedicine()
+
+def skincare():
+    print("Berikut adalah pilihan Skincare \nSilahkan pilih yang anda inginkan")
+    pilskincare = input("1. Serum \n2. Mask \n3. Toner \n\t:")
+    if pilskincare == "1":
+        tagihan()
+    elif pilskincare == "2":
+        tagihan()
+    elif pilskincare == "3":
+        tagihan()
+    else:
+        print("Invalid code \nSilahkan Masukkan Sesuai Pilihan Yang Ada!")
+        skincare()
+
+def haircare():
+    print("Berikut adalah pilihan Haircare \nSilahkan pilih yang anda inginkan")
+    pilhaircare = input("1. Shampo \n2. Conditioner \n\t:")
+    if pilhaircare == "1":
+        tagihan()
+    elif pilhaircare == "2":
+        tagihan()
+    else:
+        print("Invalid code \nSilahkan Masukkan Sesuai Pilihan Yang Ada!")
+        haircare()
+
+def cancel():
+    no_pesanan = input("Silahkan input nomor pesanan anda \t:")
+    print("Anda akan menerima refund sebesar 70% dari yang anda bayarkan sebelumnya")
+    make_sure  = input("Apakah anda yakin ingin membatalkan pesanan? \n1. YES \n2. NO \t:")
+    if make_sure == "1":
+        print("Pesanan anda telah dibatalkan \nAnda akan menerima refund sesuai dengan media pembayaran yang anda gunakan sebelumnya paling lambat 2 x 24 jam")
+    else:
+        print("Terima Kasih Telah Memilih Produk Kami")
+
+def inputcustjam():
+    print(input("Input Jumlah Customer \n>"))
+    print("Pilih Jam yang Anda Inginkan untuk Treatment : \n1. 08.00 \n2. 10.00 \n3. 13.00")
+    print(input(">"))
+    sekaliguskonsul = (input("Apakah Anda Ingin Sekaligus Konsultasi ? \n1. YA \n2. TIDAK \n>"))
+    print(sekaliguskonsul)
+    if sekaliguskonsul == 1 :
+        consultation()
+    else:
+        tagihan()
+
+def tagihan():
+    print("......")
+    breakpoint()
