@@ -32,7 +32,7 @@ def facetreatment():
 
 def fruitfacial():
     print("Berikut adalah pilihan Fruit Facial \nSilahkan pilih yang anda inginkan")
-    pilfruitfacial = input("1. Strawberry Exfoliating Facial \n2. Blueberry Atioxidan Facial \n3. Apple Purifying Facial \n\t:")
+    pilfruitfacial = input("1. Strawberry Exfoliating Facial {Rp 90.000,00} \n2. Blueberry Atioxidan Facial {Rp 90.000,00} \n3. Apple Purifying Facial {Rp 90.000,00} \n\t:")
     if pilfruitfacial == "1":
         inputcustjam()
     elif pilfruitfacial == "2":
@@ -45,7 +45,7 @@ def fruitfacial():
 
 def antiacnefacial():
     print("Berikut adalah pilihan Anti Acne Facial \nSilahkan pilih yang anda inginkan")
-    pilantiacne = input("1. Bio Acne Light Teraphy \n2. Bio Inflame Acne Teraphy \n3. Microteraphy Acne Control \n\t:")
+    pilantiacne = input("1. Bio Acne Light Teraphy {Rp 230.000,00}\n2. Bio Inflame Acne Teraphy {Rp 230.000,00}\n3. Microteraphy Acne Control {Rp 230.000,00}\n\t:")
     if pilantiacne == "1":
         inputcustjam()
     elif pilantiacne == "2":
@@ -58,7 +58,7 @@ def antiacnefacial():
 
 def moisturizingfacial():
     print("Berikut adalah pilihan Moisturizing Facial \nSilahkan pilih yang anda inginkan")
-    pilmoist = input("1. Collagen Facial \n2. Paraffin Facial \n3. Honey Facial \n\t:")
+    pilmoist = input("1. Collagen Facial {Rp 135.000,00}\n2. Paraffin Facial {Rp 135.000,00}\n3. Honey Facial {Rp 135.000,00}\n\t:")
     if pilmoist == "1":
         inputcustjam()
     elif pilmoist == "2":
@@ -71,7 +71,7 @@ def moisturizingfacial():
 
 def hairtreatment():
     print("Berikut adalah pilihan Hair Treatment \nSilahkan pilih yang anda inginkan")
-    pilhairtreatment = input("1. Medical Hair Treatment \n2. Medical Hair Mask \n3. Waxing \n\t:")
+    pilhairtreatment = input("1. Medical Hair Treatment {Rp 70.000,00}\n2. Medical Hair Mask {Rp 70.000,00}\n3. Waxing {Rp 70.000,00}\n\t:")
     if pilhairtreatment == "1":
         inputcustjam()
     elif pilhairtreatment == "2":
@@ -84,7 +84,7 @@ def hairtreatment():
 
 def bodytreatment():
     print("Berikut adalah pilihan Body Treatment \nSilahkan pilih yang anda inginkan")
-    pilbodytreatment = input("1. Body Slimming \n2. Body Treatment \n3. Body Firming")
+    pilbodytreatment = input("1. Body Slimming \n2. Body Treatment \n3. Body Firming {Rp 360.000,00}")
     if pilbodytreatment == "1":
         print("Silahkan pilih jenis berikut: ")
         bodyslimming()
@@ -93,14 +93,14 @@ def bodytreatment():
         treatmentbody()
     elif pilbodytreatment == "3":
         print("Silahkan pilih jenis berikut: ")
-        bodytreatment()
+        inputcustjam()
     else:
         print("Invalid code \nSilahkan Masukkan Sesuai Pilihan Yang Ada!")
         bodytreatment()
 
 def bodyslimming():
     print("Berikut adalah pilihan Body Slimming \nSilahkan pilih yang anda inginkan")
-    pilbodyslim = input("1. Meso Body Perut \n2. Meso Body Paha \n3. Meso Body Lengan \n\t:")
+    pilbodyslim = input("1. Meso Body Perut {Rp 360.000,00}\n2. Meso Body Paha {Rp 360.000,00}\n3. Meso Body Lengan {Rp 360.000,00}\n\t:")
     if pilbodyslim == "1":
         inputcustjam()
     elif pilbodyslim == "2":
@@ -113,7 +113,7 @@ def bodyslimming():
 
 def treatmentbody():
     print("Berikut adalah pilihan Perawatan Tubuh \nSilahkan pilih yang anda inginkan")
-    pilbodytreat = input("1. Refreshing Body Spa \n2. Antioxidan Spa \n3. Brightening Spa \n\t:")
+    pilbodytreat = input("1. Refreshing Body Spa {Rp 330.000,00}\n2. Antioxidan Spa {Rp 330.000,00}\n3. Brightening Spa {Rp 330.000,00}\n\t:")
     if pilbodytreat == "1":
         inputcustjam()
     elif pilbodytreat == "2":
@@ -134,7 +134,7 @@ def consultation():
     print(dokter)
     indokter = (input("Pilih Dokter Yang Anda Inginkan :"))
     print("Berikut Daftar Media Konsultasi :")
-    media = "1. Whatsapp \n2. Zoom Meeting \n3. Google Meeting \n4. Datang Langsung"
+    media = "1. Whatsapp \n2. Zoom Meeting {Rp 50.000,00}\n3. Google Meeting {Rp 50.000,00}\n4. Datang Langsung {Rp 50.000,00}"
     print(media)
     inmedia = (input("Pilih Media Yang Anda Inginkan :"))
     tagihan()
@@ -154,7 +154,7 @@ def buymedicine():
 
 def skincare():
     print("Berikut adalah pilihan Skincare \nSilahkan pilih yang anda inginkan")
-    pilskincare = input("1. Serum \n2. Mask \n3. Toner \n\t:")
+    pilskincare = input("1. Serum {Rp 50.000,00}\n2. Mask {Rp 50.000,00}\n3. Toner {Rp 50.000,00}\n\t:")
     if pilskincare == "1":
         tagihan()
     elif pilskincare == "2":
@@ -167,7 +167,7 @@ def skincare():
 
 def haircare():
     print("Berikut adalah pilihan Haircare \nSilahkan pilih yang anda inginkan")
-    pilhaircare = input("1. Shampo \n2. Conditioner \n\t:")
+    pilhaircare = input("1. Shampo {Rp 50.000,00}\n2. Conditioner {Rp 50.000,00}\n\t:")
     if pilhaircare == "1":
         tagihan()
     elif pilhaircare == "2":
