@@ -1,33 +1,27 @@
-[Judul Program]
-Tugas Besar Praktikum Program Komputer 2021 Kelas [X]
+Klinik Kecantikan Tulas
+Tugas Besar Praktikum Program Komputer 2021 Kelas C
 
-Kelompok [XX]
-Program ini dibuat untuk [tujuan pembuatan program]
+Kelompok 17
+Program ini dibuat untuk membantu membuat perjanjian antara 
+pelanggan yang memesan jasa kecantikan dan klinik yang
+menawarkan jasa kecantikan
+
 Repository
-
-Berkas ["nama berkas"]
+Berkas "Diagram Alir Tulas.pdf
 Merupakan lampiran berupa diagram alir yang 
 menjelaskan cara kerja program
 
-Berkas ["nama berkas"]
-Merupakan [penjelasan berkas]
-
-Berkas ["nama berkas"]
-Merupakan [penjelasan berkas]
-
-Berkas ["nama berkas"]
-Merupakan [penjelasan berkas]
+Berkas "Klinik Kecangtikan Tulas.py" 
+Merupakan berkas pemrograman dengan bahasa Python yang 
+memuat program Klinik Kecantikan Tulas
 
 Berkas "README.md"
- Merupakan penjelasan singkat isi dari repository
+Merupakan penjelasan singkat isi dari repository
  
 System Requirement
-[berisi persyaratan yang diperlukan untuk menjalankan 
-program, seperti spesifikasi OS, versi python, berkas 
-tambahan pendukung program, library yang harus terpasang 
-pada python, dll. Ditulis berurut ke bawah]
+Untuk menjalankan program ini memerlukan python versi 2
 
 Penjelasan Singkat Program
-[penjelasan singkat bagaimana pengguna dapat memakai 
-program. Ditulis berurut ke bawah]
-
+Pengguna dapat menggunakan program ini untuk
+membuat pemesanan Treatment, Consultation, dan Buy Madicine
+dan program akan menampilkan rincian pemesanan pengguna
