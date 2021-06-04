@@ -144,7 +144,7 @@ def treatmentbody():
         treatmentbody()
 
 def consultation():
-    global price_concul
+    global harga_concul
     global injamkonsul
     global media
     global indokter
@@ -215,12 +215,14 @@ def cancel():
         print("Terima Kasih Telah Memilih Produk Kami")
 
 def inputcustjam():
-    print(input("Input Jumlah Customer \n>"))
+    global jml_custom
+    global jam_treatment
+    jml_custom = int(input("Input Jumlah Customer \n>"))
     print("Pilih Jam yang Anda Inginkan untuk Treatment : \n1. 08.00 \n2. 10.00 \n3. 13.00")
-    print(input(">"))
+    jam_treatment = input(">")
     sekaliguskonsul = (input("Apakah Anda Ingin Sekaligus Konsultasi ? \n1. YA \n2. TIDAK \n>"))
     print(sekaliguskonsul)
-    if sekaliguskonsul == 1 :
+    if sekaliguskonsul == "1" :
         consultation()
     else:
         tagihan()
@@ -253,51 +255,51 @@ def tagihan():
         if injamkonsul == "1":
             if indokter == "1":
                 if media == "1" or "2" or "3":
-                    print("Anda memesan Konsultasi secara Online bersama Dr. Tazkiya pada jam 09:00, selama ",durasi," jam dengan total tagihan \t=Rp ",durasi * price_concul)
+                    print("Anda memesan Konsultasi secara Online bersama Dr. Tazkiya pada jam 09:00, selama ",durasi," jam dengan total tagihan \t=Rp ",durasi * harga_consul)
                 else:
-                    print("Anda memesan Konsultasi secara Langsung bersama Dr. Tazkiya pada jam 09:00, selama ",durasi," jam dengan total tagihan \t=Rp ",durasi * price_concul)
+                    print("Anda memesan Konsultasi secara Langsung bersama Dr. Tazkiya pada jam 09:00, selama ",durasi," jam dengan total tagihan \t=Rp ",durasi * harga_consul)
             elif indokter == "2":
                 if media == "1" or "2" or "3":
-                    print("Anda memesan Konsultasi secara Online bersama Dr. Sekar pada jam 09:00, selama ",durasi," jam dengan total tagihan \t=Rp ",durasi * price_concul)
+                    print("Anda memesan Konsultasi secara Online bersama Dr. Sekar pada jam 09:00, selama ",durasi," jam dengan total tagihan \t=Rp ",durasi * harga_consul)
                 else:
-                    print("Anda memesan Konsultasi secara Langsung bersama Dr. Sekar pada jam 09:00, selama ",durasi," jam dengan total tagihan \t=Rp ",durasi * price_concul)
+                    print("Anda memesan Konsultasi secara Langsung bersama Dr. Sekar pada jam 09:00, selama ",durasi," jam dengan total tagihan \t=Rp ",durasi * harga_consul)
             else:
                 if media == "1" or "2" or "3":
-                    print("Anda memesan Konsultasi secara Online bersama Dr. Rahmat pada jam 09:00, selama ",durasi," jam dengan total tagihan \t=Rp ",durasi * price_concul)
+                    print("Anda memesan Konsultasi secara Online bersama Dr. Rahmat pada jam 09:00, selama ",durasi," jam dengan total tagihan \t=Rp ",durasi * harga_consul)
                 else:
-                    print("Anda memesan Konsultasi secara Langsung bersama Dr. Rahmat pada jam 09:00, selama ",durasi," jam dengan total tagihan \t=Rp ",durasi * price_concul)
-       elif injamkonsul == "2":
+                    print("Anda memesan Konsultasi secara Langsung bersama Dr. Rahmat pada jam 09:00, selama ",durasi," jam dengan total tagihan \t=Rp ",durasi * harga_consul)
+        elif injamkonsul == "2":
             if indokter == "1":
                 if media == "1" or "2" or "3":
-                    print("Anda memesan Konsultasi secara Online bersama Dr. Tazkiya pada jam 11:00, selama ",durasi," jam dengan total tagihan \t=Rp ",durasi * price_concul)
+                    print("Anda memesan Konsultasi secara Online bersama Dr. Tazkiya pada jam 11:00, selama ",durasi," jam dengan total tagihan \t=Rp ",durasi * harga_consul)
                 else:
-                    print("Anda memesan Konsultasi secara Langsung bersama Dr. Tazkiya pada jam 11:00, selama ",durasi," jam dengan total tagihan \t=Rp ",durasi * price_concul)
+                    print("Anda memesan Konsultasi secara Langsung bersama Dr. Tazkiya pada jam 11:00, selama ",durasi," jam dengan total tagihan \t=Rp ",durasi * harga_consul)
             elif indokter == "2":
                 if media == "1" or "2" or "3":
-                    print("Anda memesan Konsultasi secara Online bersama Dr. Sekar pada jam 11:00, selama ",durasi," jam dengan total tagihan \t=Rp ",durasi * price_concul)
+                    print("Anda memesan Konsultasi secara Online bersama Dr. Sekar pada jam 11:00, selama ",durasi," jam dengan total tagihan \t=Rp ",durasi * harga_consul)
                 else:
-                    print("Anda memesan Konsultasi secara Langsung bersama Dr. Sekar pada jam 11:00, selama ",durasi," jam dengan total tagihan \t=Rp ",durasi * price_concul)
+                    print("Anda memesan Konsultasi secara Langsung bersama Dr. Sekar pada jam 11:00, selama ",durasi," jam dengan total tagihan \t=Rp ",durasi * harga_consul)
             else:
                 if media == "1" or "2" or "3":
-                    print("Anda memesan Konsultasi secara Online bersama Dr. Rahmat pada jam 11:00, selama ",durasi," jam dengan total tagihan \t=Rp ",durasi * price_concul)
+                    print("Anda memesan Konsultasi secara Online bersama Dr. Rahmat pada jam 11:00, selama ",durasi," jam dengan total tagihan \t=Rp ",durasi * harga_consul)
                 else:
-                    print("Anda memesan Konsultasi secara Langsung bersama Dr. Rahmat pada jam 11:00, selama ",durasi," jam dengan total tagihan \t=Rp ",durasi * price_concul)
-       else:
-           if indokter == "1":
+                    print("Anda memesan Konsultasi secara Langsung bersama Dr. Rahmat pada jam 11:00, selama ",durasi," jam dengan total tagihan \t=Rp ",durasi * harga_consul)
+        else:
+            if indokter == "1":
                 if media == "1" or "2" or "3":
-                    print("Anda memesan Konsultasi secara Online bersama Dr. Tazkiya pada jam 13:00, selama ",durasi," jam dengan total tagihan \t=Rp ",durasi * price_concul)
+                    print("Anda memesan Konsultasi secara Online bersama Dr. Tazkiya pada jam 13:00, selama ",durasi," jam dengan total tagihan \t=Rp ",durasi * harga_consul)
                 else:
-                    print("Anda memesan Konsultasi secara Langsung bersama Dr. Tazkiya pada jam 13:00, selama ",durasi," jam dengan total tagihan \t=Rp ",durasi * price_concul)
+                    print("Anda memesan Konsultasi secara Langsung bersama Dr. Tazkiya pada jam 13:00, selama ",durasi," jam dengan total tagihan \t=Rp ",durasi * harga_consul)
             elif indokter == "2":
                 if media == "1" or "2" or "3":
-                    print("Anda memesan Konsultasi secara Online bersama Dr. Sekar pada jam 13:00, selama ",durasi," jam dengan total tagihan \t=Rp ",durasi * price_concul)
+                    print("Anda memesan Konsultasi secara Online bersama Dr. Sekar pada jam 13:00, selama ",durasi," jam dengan total tagihan \t=Rp ",durasi * harga_consul)
                 else:
-                    print("Anda memesan Konsultasi secara Langsung bersama Dr. Sekar pada jam 13:00, selama ",durasi," jam dengan total tagihan \t=Rp ",durasi * price_concul)
+                    print("Anda memesan Konsultasi secara Langsung bersama Dr. Sekar pada jam 13:00, selama ",durasi," jam dengan total tagihan \t=Rp ",durasi * harga_consul)
             else:
-                if media == "1" or "2" or "3":
-                    print("Anda memesan Konsultasi secara Online bersama Dr. Rahmat pada jam 13:00, selama ",durasi," jam dengan total tagihan \t=Rp ",durasi * price_concul)
-                else:
-                    print("Anda memesan Konsultasi secara Langsung bersama Dr. Rahmat pada jam 13:00, selama ",durasi," jam dengan total tagihan \t=Rp ",durasi * price_concul)
+               if media == "1" or "2" or "3":
+                   print("Anda memesan Konsultasi secara Online bersama Dr. Rahmat pada jam 13:00, selama ",durasi," jam dengan total tagihan \t=Rp ",durasi * harga_consul)
+               else:
+                   print("Anda memesan Konsultasi secara Langsung bersama Dr. Rahmat pada jam 13:00, selama ",durasi," jam dengan total tagihan \t=Rp ",durasi * harga_consul)
     elif menu == "3":
         if pilmedicine == "1":
             print("Anda memesan produk Skincare sebanyak ",jml_skincare," buah, seharga Rp ",price_medicine," \nDengan total Tagihan = Rp ",jml_skincare * price_medicine)
@@ -305,6 +307,7 @@ def tagihan():
             print("Anda memesan produk Haircare sebanyak ",jml_haircare," buah, seharga Rp ",price_medicine," \nDengan total Tagihan = Rp ",jml_haircare * price_medicine)
     else:
         pass
+    payment()
     
 def payment():
     print("Berikut adalah pilihan Payment \nSilahkan pilih yang anda inginkan")
