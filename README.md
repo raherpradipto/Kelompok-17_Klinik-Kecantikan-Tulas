@@ -30,7 +30,7 @@ Berkas "README.md"
 Merupakan penjelasan singkat isi dari repository
  
 System Requirement
-Untuk menjalankan program ini memerlukan python 2
+Untuk menjalankan program ini memerlukan minimal python 2
 
 Penjelasan Singkat Program
 Pengguna dapat menggunakan program ini untuk
