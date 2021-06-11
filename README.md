@@ -18,7 +18,11 @@ latar belakang program, basis yang dipilih,
 diagram alir program, fitur program,
 keunggulan program, dan potensi program dimasa depan
 
-Berkas "Klinik Kecangtikan Tulas.py" 
+Berkas "Klinik Kecantikan Tulas.pptx"
+Merupakan berkas berupa materi presentasi tentang 
+program Klinik Kecantikan Tulas
+
+Berkas "Klinik Kecantikan Tulas.py" 
 Merupakan berkas pemrograman dalam bahasa Python yang 
 memuat program Klinik Kecantikan Tulas
 
@@ -26,7 +30,7 @@ Berkas "README.md"
 Merupakan penjelasan singkat isi dari repository
  
 System Requirement
-Untuk menjalankan program ini memerlukan python versi 2
+Untuk menjalankan program ini memerlukan python 2
 
 Penjelasan Singkat Program
 Pengguna dapat menggunakan program ini untuk
