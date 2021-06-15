@@ -398,3 +398,203 @@ def tagihan(sekaligus):
                     total = jml_custom * price_ht
             else:
                 if pilbodytreatment == "1":
+                    print("Pesanan anda berpa Body Slimming Treatment seharga Rp ", price_bs, "untuk", jml_custom, "orang \nDengan total Tagihan = \tRp ",jml_custom * price_bs)
+                    pes = 'Pesanan anda berupa Body Slimming Treatment '
+                    total = jml_custom * price_bs
+                elif pilbodytreatment == "2":
+                    print("Pesanan anda berpa Body Treatment seharga Rp ", price_tb, "untuk", jml_custom, "orang \nDengan total Tagihan = \tRp ",jml_custom * price_tb)
+                    pes = 'Pesanan anda berupa Body Treatment '
+                    total = jml_custom * price_tb
+                else:
+                    print("Pesanan anda berpa Body Firming seharga Rp ", price_bf, "untuk", jml_custom, "orang \nDengan total Tagihan = \tRp ",jml_custom * price_bf)
+                    pes = 'Pesanan anda berupa Body Firming '
+                    total = jml_custom * price_bf
+        elif menu == "2":
+            if injamkonsul == "1":
+                if indokter == "1":
+                    if media == "1" or "2" or "3":
+                        print("Anda memesan Konsultasi secara Online bersama Dr. Tazkiya pada jam 09:00, selama ",durasi," jam dengan total tagihan \t=Rp ",durasi * harga_consul)
+                        pes = 'Pesanan anda berupa Konsultasi secara Online bersama Dr. Tazkiya pada jam 09:00, '
+                        total = durasi * harga_consul
+                    else:
+                        print("Anda memesan Konsultasi secara Langsung bersama Dr. Tazkiya pada jam 09:00, selama ",durasi," jam dengan total tagihan \t=Rp ",durasi * harga_consul)
+                        pes = 'Pesanan anda berupa Konsultasi secara Langsung bersama Dr. Tazkiya pada jam 09:00, '
+                        total = durasi * harga_consul
+                elif indokter == "2":
+                    if media == "1" or "2" or "3":
+                        print("Anda memesan Konsultasi secara Online bersama Dr. Sekar pada jam 09:00, selama ",durasi," jam dengan total tagihan \t=Rp ",durasi * harga_consul)
+                        pes = 'Pesanan anda berupa Konsultasi secara Online bersama Dr. Sekar pada jam 09:00, '
+                        total = durasi * harga_consul
+                    else:
+                        print("Anda memesan Konsultasi secara Langsung bersama Dr. Sekar pada jam 09:00, selama ",durasi," jam dengan total tagihan \t=Rp ",durasi * harga_consul)
+                        pes = 'Pesanan anda berupa Konsultasi secara Langsung bersama Dr. Sekar pada jam 09:00, '
+                        total = durasi * harga_consul
+                else:
+                    if media == "1" or "2" or "3":
+                        print("Anda memesan Konsultasi secara Online bersama Dr. Rahmat pada jam 09:00, selama ",durasi," jam dengan total tagihan \t=Rp ",durasi * harga_consul)
+                        pes = 'Pesanan anda berupa Konsultasi secara Online bersama Dr. Rahmat pada jam 09:00, '
+                        total = durasi * harga_consul
+                    else:
+                        print("Anda memesan Konsultasi secara Langsung bersama Dr. Rahmat pada jam 09:00, selama ",durasi," jam dengan total tagihan \t=Rp ",durasi * harga_consul)
+                        pes = 'Pesanan anda berupa Konsultasi secara Langsung bersama Dr. Rahmat pada jam 09:00, '
+                        total = durasi * harga_consul
+            elif injamkonsul == "2":
+                if indokter == "1":
+                    if media == "1" or "2" or "3":
+                        print("Anda memesan Konsultasi secara Online bersama Dr. Tazkiya pada jam 11:00, selama ",durasi," jam dengan total tagihan \t=Rp ",durasi * harga_consul)
+                        pes = 'Pesanan anda berupa Konsultasi secara Online bersama Dr. Tazkiya pada jam 11:00, '
+                        total = durasi * harga_consul
+                    else:
+                        print("Anda memesan Konsultasi secara Langsung bersama Dr. Tazkiya pada jam 11:00, selama ",durasi," jam dengan total tagihan \t=Rp ",durasi * harga_consul)
+                        pes = 'Pesanan anda berupa Konsultasi secara Langsung bersama Dr. Tazkiya pada jam 11:00, '
+                        total = durasi * harga_consul
+                elif indokter == "2":
+                    if media == "1" or "2" or "3":
+                        print("Anda memesan Konsultasi secara Online bersama Dr. Sekar pada jam 11:00, selama ",durasi," jam dengan total tagihan \t=Rp ",durasi * harga_consul)
+                        pes = 'Pesanan anda berupa Konsultasi secara Online bersama Dr. Sekar pada jam 11:00, '
+                        total = durasi * harga_consul
+                    else:
+                        print("Anda memesan Konsultasi secara Langsung bersama Dr. Sekar pada jam 11:00, selama ",durasi," jam dengan total tagihan \t=Rp ",durasi * harga_consul)
+                        pes = 'Pesanan anda berupa Konsultasi secara Langsung bersama Dr. Sekar pada jam 11:00, '
+                        total = durasi * harga_consul
+                else:
+                    if media == "1" or "2" or "3":
+                        print("Anda memesan Konsultasi secara Online bersama Dr. Rahmat pada jam 11:00, selama ",durasi," jam dengan total tagihan \t=Rp ",durasi * harga_consul)
+                        pes = 'Pesanan anda berupa Konsultasi secara Online bersama Dr. Rahmat pada jam 11:00, '
+                        total = durasi * harga_consul
+                    else:
+                        print("Anda memesan Konsultasi secara Langsung bersama Dr. Rahmat pada jam 11:00, selama ",durasi," jam dengan total tagihan \t=Rp ",durasi * harga_consul)
+                        pes = 'Pesanan anda berupa Konsultasi secara Langsung bersama Dr. Rahmat pada jam 11:00, '
+                        total = durasi * harga_consul
+            else:
+                if indokter == "1":
+                    if media == "1" or "2" or "3":
+                        print("Anda memesan Konsultasi secara Online bersama Dr. Tazkiya pada jam 13:00, selama ",durasi," jam dengan total tagihan \t=Rp ",durasi * harga_consul)
+                        pes = 'Pesanan anda berupa Konsultasi secara Online bersama Dr. Tazkiya pada jam 13:00, '
+                        total = durasi * harga_consul
+                    else:
+                        print("Anda memesan Konsultasi secara Langsung bersama Dr. Tazkiya pada jam 13:00, selama ",durasi," jam dengan total tagihan \t=Rp ",durasi * harga_consul)
+                        pes = 'Pesanan anda berupa Konsultasi secara Langsung bersama Dr. Tazkiya pada jam 13:00, '
+                        total = durasi * harga_consul
+                elif indokter == "2":
+                    if media == "1" or "2" or "3":
+                        print("Anda memesan Konsultasi secara Online bersama Dr. Sekar pada jam 13:00, selama ",durasi," jam dengan total tagihan \t=Rp ",durasi * harga_consul)
+                        pes = 'Pesanan anda berupa Konsultasi secara Online bersama Dr. Sekar pada jam 13:00, '
+                        total = durasi * harga_consul
+                    else:
+                        print("Anda memesan Konsultasi secara Langsung bersama Dr. Sekar pada jam 13:00, selama ",durasi," jam dengan total tagihan \t=Rp ",durasi * harga_consul)
+                        pes = 'Pesanan anda berupa Konsultasi secara Langsung bersama Dr. Sekar pada jam 13:00, '
+                        total = durasi * harga_consul
+                else:
+                   if media == "1" or "2" or "3":
+                       print("Anda memesan Konsultasi secara Online bersama Dr. Rahmat pada jam 13:00, selama ",durasi," jam dengan total tagihan \t=Rp ",durasi * harga_consul)
+                       pes = 'Pesanan anda berupa Konsultasi secara Online bersama Dr. Rahmat pada jam 13:00, '
+                       total = durasi * harga_consul
+                   else:
+                       print("Anda memesan Konsultasi secara Langsung bersama Dr. Rahmat pada jam 13:00, selama ",durasi," jam dengan total tagihan \t=Rp ",durasi * harga_consul)
+                       pes = 'Pesanan anda berupa Konsultasi secara Langsung bersama Dr. Rahmat pada jam 13:00, '
+                       total = durasi * harga_consul
+        elif menu == "3":
+            if pilmedicine == "1":
+                print("Anda memesan produk Skincare sebanyak ",jml_skincare," buah, seharga Rp ",price_medicine," \nDengan total Tagihan = Rp ",jml_skincare * price_medicine)
+                pes = 'Pesanan anda berupa produk Skincare '
+                total = jml_skincare * price_medicine
+            else:
+                print("Anda memesan produk Haircare sebanyak ",jml_haircare," buah, seharga Rp ",price_medicine," \nDengan total Tagihan = Rp ",jml_haircare * price_medicine)
+                pes = 'Pesanan anda berupa produk Haircare '
+                total = jml_haircare * price_medicine
+        else:
+            pass
+        filename = open ('struk.txt', 'w')
+        filename.write(struk)
+        filename.write('\n' + penutup)
+        if menu == "1":
+            print('\n\n\n{}'.format(pes),'dengan jumlah customer (orang)', jml_custom,'\ndengan total tagihan :', total, file = filename)
+        elif menu == "2" :
+            print('\n\n\n{}'.format(pes), 'dengan durasi (jam) = ', durasi, '\ndengan total tagihan :', total, file=filename)
+        else:
+            if pilmedicine == "1" :
+                print('\n\n\n{}'.format(pes), 'sebanyak', jml_skincare, 'buah \ndengan total tagihan :', total, file=filename)
+            else:
+                print('\n\n\n{}'.format(pes), 'sebanyak', jml_haircare, 'buah \ndengan total tagihan :', total, file=filename)
+        filename.close()
+        regispesanan(sekarang)
+        payment()
+
+    def tagihan_ganda():
+        if intreatment == "1":
+            if pilfacetreatment == "1":
+                print("Pesanan anda berupa treatment Fruit Facial seharga Rp ", price_ff, "untuk", jml_custom,
+                      "orang \ndengan harga = \tRp ", jml_custom * price_ff)
+                print("Dengan tambahan pemesanan konsultasi selama ", durasi ,'jam, dengan harga = Rp ', durasi * harga_consul)
+                print("Sehingga total tagihan anda sebesar = Rp ", (jml_custom * price_ff) + (durasi * harga_consul))
+                pesproduk = "Pesanan anda berupa treatment Fruit Facial "
+                harproduk = jml_custom * price_ff
+                pesconsul = "Dengan tambahan pemesanan konsultasi "
+                harconsul = durasi * harga_consul
+                pestotal = "Total tagihan anda sebesar = Rp "
+                hartotal = harconsul + harproduk
+            elif pilfacetreatment == "2":
+                print("Pesanan anda berupa treatment Anti Acne Facial seharga Rp ", price_af, "untuk", jml_custom,
+                      "orang \nDengan total Tagihan = \tRp ", jml_custom * price_af)
+                print("Dengan tambahan pemesanan konsultasi selama ", durasi, 'jam, dengan harga = Rp ',
+                      durasi * harga_consul)
+                print("Sehingga total tagihan anda sebesar = Rp ", (jml_custom * price_af) + (durasi * harga_consul))
+                pesproduk = "Pesanan anda berupa treatment Anti Acne Facial "
+                harproduk = jml_custom * price_af
+                pesconsul = "Dengan tambahan pemesanan konsultasi "
+                harconsul = durasi * harga_consul
+                pestotal = "Total tagihan anda sebesar = Rp "
+                hartotal = harconsul + harproduk
+            else:
+                print("Pesanan anda berupa treatment Moisturizing Facial seharga Rp ", price_mf, "untuk", jml_custom,
+                      "orang \nDengan total Tagihan = \tRp ", jml_custom * price_mf)
+                print("Dengan tambahan pemesanan konsultasi selama ", durasi, 'jam, dengan harga = Rp ',
+                      durasi * harga_consul)
+                print("Sehingga total tagihan anda sebesar = Rp ", (jml_custom * price_mf) + (durasi * harga_consul))
+                pesproduk = "Pesanan anda berupa treatment Moisturizing Facial "
+                harproduk = jml_custom * price_mf
+                pesconsul = "Dengan tambahan pemesanan konsultasi "
+                harconsul = durasi * harga_consul
+                pestotal = "Total tagihan anda sebesar = Rp "
+                hartotal = harconsul + harproduk
+        elif intreatment == "2":
+            if pilhairtreatment == "1":
+                print("Pesanan anda berupa Medical Hair Treatment seharga Rp ", price_ht, "untuk", jml_custom,
+                      "orang \nDengan total Tagihan = \tRp ", jml_custom * price_ht)
+                print("Dengan tambahan pemesanan konsultasi selama ", durasi, 'jam, dengan harga = Rp ',
+                      durasi * harga_consul)
+                print("Sehingga total tagihan anda sebesar = Rp ", (jml_custom * price_ht) + (durasi * harga_consul))
+                pesproduk = "Pesanan anda berupa Medical Hair Treatment untuk "
+                harproduk = jml_custom * price_ht
+                pesconsul = "Dengan tambahan pemesanan konsultasi "
+                harconsul = durasi * harga_consul
+                pestotal = "Total tagihan anda sebesar = Rp "
+                hartotal = harconsul + harproduk
+            elif pilhairtreatment == "2":
+                print("Pesanan anda berupa Medical Hair Mask seharga Rp ", price_ht, "untuk", jml_custom,
+                      "orang \nDengan total Tagihan = \tRp ", jml_custom * price_ht)
+                print("Dengan tambahan pemesanan konsultasi selama ", durasi, 'jam, dengan harga = Rp ',
+                      durasi * harga_consul)
+                print("Sehingga total tagihan anda sebesar = Rp ", (jml_custom * price_ht) + (durasi * harga_consul))
+                pesproduk = "Pesanan anda berupa Medical Hair Mask "
+                harproduk = jml_custom * price_ht
+                pesconsul = "Dengan tambahan pemesanan konsultasi "
+                harconsul = durasi * harga_consul
+                pestotal = "Total tagihan anda sebesar = Rp "
+                hartotal = harconsul + harproduk
+            else:
+                print("Pesanan anda berupa Waxing seharga Rp ", price_ht, "untuk", jml_custom,
+                      "orang \nDengan total Tagihan = \tRp ", jml_custom * price_ht)
+                print("Dengan tambahan pemesanan konsultasi selama ", durasi, 'jam, dengan harga = Rp ',
+                      durasi * harga_consul)
+                print("Sehingga total tagihan anda sebesar = Rp ", (jml_custom * price_ht) + (durasi * harga_consul))
+                pesproduk = "Pesanan anda berupa Waxing untuk "
+                harproduk = jml_custom * price_ht
+                pesconsul = "Dengan tambahan pemesanan konsultasi "
+                harconsul = durasi * harga_consul
+                pestotal = "Total tagihan anda sebesar = Rp "
+                hartotal = harconsul + harproduk
+        else:
+            if pilbodytreatment == "1":
+                print("Pesanan anda berpa Body Slimming Treatment seharga Rp ", price_bs, "untuk", jml_custom,  
