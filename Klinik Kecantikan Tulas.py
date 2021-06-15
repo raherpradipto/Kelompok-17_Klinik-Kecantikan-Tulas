@@ -598,3 +598,203 @@ def tagihan(sekaligus):
         else:
             if pilbodytreatment == "1":
                 print("Pesanan anda berpa Body Slimming Treatment seharga Rp ", price_bs, "untuk", jml_custom,  
+                      "orang \nDengan total Tagihan = \tRp ", jml_custom * price_bs)
+                print("Dengan tambahan pemesanan konsultasi selama ", durasi, 'jam, dengan harga = Rp ',
+                      durasi * harga_consul)
+                print("Sehingga total tagihan anda sebesar = Rp ", (jml_custom * price_bs) + (durasi * harga_consul))
+                pesproduk = "Pesanan anda berupa Body Slimming Treatment "
+                harproduk = jml_custom * price_bs
+                pesconsul = "Dengan tambahan pemesanan konsultasi "
+                harconsul = durasi * harga_consul
+                pestotal = "Total tagihan anda sebesar = Rp "
+                hartotal = harconsul + harproduk
+            elif pilbodytreatment == "2":
+                print("Pesanan anda berpa Body Treatment seharga Rp ", price_tb, "untuk", jml_custom,
+                      "orang \nDengan total Tagihan = \tRp ", jml_custom * price_tb)
+                print("Dengan tambahan pemesanan konsultasi selama ", durasi, 'jam, dengan harga = Rp ',
+                      durasi * harga_consul)
+                print("Sehingga total tagihan anda sebesar = Rp ", (jml_custom * price_tb) + (durasi * harga_consul))
+                pesproduk = "Pesanan anda berupa Body Treatment "
+                harproduk = jml_custom * price_tb
+                pesconsul = "Dengan tambahan pemesanan konsultasi "
+                harconsul = durasi * harga_consul
+                pestotal = "Total tagihan anda sebesar = Rp "
+                hartotal = harconsul + harproduk
+            else:
+                print("Pesanan anda berpa Body Firming seharga Rp ", price_bf, "untuk", jml_custom,
+                      "orang \nDengan total Tagihan = \tRp ", jml_custom * price_bf)
+                print("Dengan tambahan pemesanan konsultasi selama ", durasi, 'jam, dengan harga = Rp ',
+                      durasi * harga_consul)
+                print("Sehingga total tagihan anda sebesar = Rp ", (jml_custom * price_bf) + (durasi * harga_consul))
+                pesproduk = "Pesanan anda berupa Body Firming "
+                harproduk = jml_custom * price_bf
+                pesconsul = "Dengan tambahan pemesanan konsultasi "
+                harconsul = durasi * harga_consul
+                pestotal = "Total tagihan anda sebesar = Rp "
+                hartotal = harconsul + harproduk
+        filename = open('struk.txt', 'w')
+        filename.write(struk)
+        filename.write('\n' + penutup)
+        print('\n\n\n{}'.format(pesproduk), 'dengan jumlah customer (orang)', jml_custom, '\ndengan total tagihan :', harproduk, file=filename)
+        print('\n{}'.format(pesconsul), 'selama', durasi, 'jam, \ndengan biaya :', harconsul, file=filename)
+        print('\n{}'.format(pestotal), hartotal, file=filename)
+        filename.close()
+        regispesanan(sekarang)
+        payment()
+
+    if sekaligus == '1':
+        tagihan_ganda()
+    elif sekaligus == '2':
+        tagihantunggal()
+    elif sekaligus == '3' :
+        tagihantunggal()
+    else:
+        pass
+    payment()
+
+def payment():
+    print("Berikut adalah pilihan Payment \nSilahkan pilih yang anda inginkan")
+    pilpayment= input("1. Transfer Bank \n2. Ovo \n3. Dana \n\t:")
+    if pilpayment == "1":
+        transferbank()
+    elif pilpayment == "2":
+        file = open('struk.txt','a')
+        file.write('\n\nPembayaran telah dilakukan melalui platform OVO')
+        file.write('\n' + tambahan)
+        file.close()
+        referencenumber()
+    elif pilpayment == "3":
+        file = open('struk.txt','a')
+        file.write('\n\nPembayaran telah dilakukan melalui platform DANA')
+        file.write('\n' + tambahan)
+        file.close()
+        referencenumber()
+    else:
+        print("Invalid code \nSilahkan Masukkan Sesuai Pilihan Yang Ada!")
+        payment()
+
+def transferbank():
+    print("Berikut adalah pilihan Transfer Bank \nSilahkan pilih yang anda inginkan")
+    piltfbank = input("1. BRI \n2. MANDIRI \n3. BNI \n\t:")
+    if piltfbank == "1":
+        file = open('struk.txt','a')
+        file.write('\n\nPembayaran telah dilakukan melalui transfer bank BRI')
+        file.write('\n' + tambahan)
+        file.close()
+        referencenumber()
+    elif piltfbank == "2":
+        file = open('struk.txt','a')
+        file.write('\n\nPembayaran telah dilakukan melalui transfer bank MANDIRI')
+        file.write('\n' + tambahan)
+        file.close()
+        referencenumber()
+    elif piltfbank == "3":
+        file = open('struk.txt','a')
+        file.write('\n\nPembayaran telah dilakukan melalui transfer bank BNI')
+        file.write('\n' + tambahan)
+        file.close()
+        referencenumber()
+    else:
+        print("Invalid code \nSilahkan Masukkan Sesuai Pilihan Yang Ada!")
+        transferbank()
+
+
+def referencenumber():
+    noreference = input("Silahkan masukkan nomor referensi anda:")
+    print("Pemesanan Anda SUCESS")
+    print("Terima Kasih telah percaya kepada kami")
+    exit()
+
+def mulai():
+    global menu
+    print("Selamat Datang di Aplikasi Klinik Tulas \nDapatkan Apa Yang Anda Inginkan \n",
+          "==="*12,"\nSilahkan pilih layanan yang tersedia \n1. Treatment \n2. Consultation \n3. Buy Medicine \n4. Pembatalan Pesanan")
+    menu = input("Silahkan pilih jenis produk yang anda inginkan\t:")
+    if menu == "1":
+        treatment()
+    elif menu == "2":
+        consultation('')
+    elif menu == "3":
+        buymedicine()
+    elif menu == "4":
+        cancel()
+    else:
+        print("Invalid code")
+    mulai()
+
+no_pes = '{}'.format(dtm.strftime(saat_ini,'%d%Y%M'))
+
+
+def SignUp():
+    username = input(str("Input Username Anda\t:"))
+    password = input(str("Input Password Anda\t:"))
+    cpassword = input(str("Masukkan ulang Password anda\t:"))
+    datamember = ("username :", username, "\npassword :", password)
+    if password == cpassword:
+        pass
+    else:
+        print("Password anda tidak sesuai")
+        SignUp()
+    NoWhatsApp = input("Input Nomor WhatsApp Anda\t: (+62)")
+    email = input(str("Input Alamat Email Anda\t:"))
+    noverif = input("Silahkan Input Nomor Verifikasi Yang Sudah Dikirimkan\t:")
+    print("Selamat Anda Telah Terdaftar Sebagai Member Klinik Tulas ")
+    member_number = print("Berikut Nomor Member Anda : ",NoWhatsApp)
+    awal_regis(username,password, NoWhatsApp)
+    mulai()
+
+
+def cek_json(username,password, no_member):
+    def check_json(database, username, password, nomember):
+
+        data = {
+            'username': username,
+            'password': password,
+            'nomor member': nomember
+        }
+
+        if data in database:
+        	pass
+        else:
+            print('data not found!')
+            print('Please entry the correct data')
+            Login()
+    if __name__ == '__main__':
+        FILE_NAME = 'database user.json'
+
+
+        try:
+            database = read_json(FILE_NAME)
+        except:
+            create_json(FILE_NAME)
+            database = read_json(FILE_NAME)
+
+        USERNAME = username
+        PASSWORD = password
+        NOMEMBER = no_member
+        check_json(database, USERNAME, PASSWORD, NOMEMBER)
+
+def Login():
+    username = input("Input Username Anda\t:")
+    password = input("Input Password Anda\t:")
+    memberlogin = input("Input Nomor Member Anda\t:")
+    cek_json(username, password, memberlogin)
+    mulai()
+
+def formregistrasi():
+    registrasi = input("Silahkan Pilih Langkah yang Akan Anda Lakukan \n1. Sign Up \n2. Login\t\n>")
+    if registrasi == "1":
+        SignUp()
+    elif registrasi == "2":
+        Login()
+    else:
+        print("Invalid Kode")
+        formregistrasi()
+
+def start():
+    print("Selamat Datang di Program Registrasi Klinik Tulas")
+    print("===" * 12)
+    print("Silahkan Lakukan Registrasi Dibawah Ini:")
+    formregistrasi()
+
+start()
