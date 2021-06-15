@@ -109,7 +109,7 @@ def treatment():
     elif intreatment == "3":
         bodytreatment()
     else:
-        print("Invaid code \nSilahkan input sesuai pilihan")
+        print("Invalid code \nSilahkan input sesuai pilihan")
         mulai()
 
 
