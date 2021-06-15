@@ -26,7 +26,7 @@ Berkas "nomor pesanan.json"
   Merupakan database pendukung untuk menyimpan nomor pesanan user
  
 Berkas "struk.txt"
-  Merupakan berkas contoh hasil dari program setelah dijalankan 
+  Merupakan berkas contoh hasil rekap pembayaran setelah pemesanan dilakukan 
   
 Berkas "README.md"
   Merupakan penjelasan singkat isi dari repository
@@ -35,4 +35,4 @@ System Requirement
 Untuk menjalankan program ini memerlukan minimal python 2
 
 Penjelasan Singkat Program
-Pengguna dapat menggunakan program ini untuk membuat pemesanan Treatment, Consultation, dan Buy Madicine, kemudian program akan menampilkan struk yang berisi rincian pemesanan
+Pengguna dapat menggunakan program ini untuk membuat pemesanan Treatment, Consultation, Buy Madicine,dan pembatalan reservasi, kemudian program akan menampilkan struk yang berisi rincian pemesanan
